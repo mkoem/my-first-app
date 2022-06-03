@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
     //templateUrl: './server.component.html'
     template: `<div class="alert alert-info" role="alert"><h4>This is ServerComponent</h4></div>`,
     styles: [`
-    h4 {color: red }
+    h4 {color: blue }
         `]
 })
 export class ServerComponent {
