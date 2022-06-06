@@ -1,0 +1,11 @@
+<div class="alert alert-success" role="alert">
+    <h4>Assignment 3 .  Practicing Directives</h4>
+    <button class="btn btn-primary"
+    (click)="onCreateServer()">Create element</button>
+    <p></p>
+    <div *ngFor="let element of elements; let j=index">
+        <p [ngStyle]="{backgroundColor: getColor(j)}"  [ngClass]="{whitetext: j>3}">{{j+1}}. element. Time:{{element| date: 'dd MMM yyyy hh:mm:ss'}}</p>
+
+    </div>
+    
+</div>
