@@ -1,0 +1,10 @@
+<div class="alert alert-success" role="alert">
+    <h4>Assignment 2 Practicing Databinding</h4>
+    <input type="text"
+    class="form-control"
+    [(ngModel)]="userName" >
+    <button class="btn btn-primary"
+    [disabled]="userName.length===0"
+    (click)="onClearName()">Clear</button>
+    <p>{{userName}}</p>
+</div>
