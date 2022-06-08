@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { createFind } from 'rxjs/internal/operators/find';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  oddNumbers: number[]=[];
+  evenNumbers: number[]=[];
 
+  onIntervalFired(firedNumber: number){
+    if(firedNumber % 2===0){
+      this.evenNumbers.push(firedNumber);
+    }else{this.oddNumbers.push(firedNumber);}
+  }
 }
